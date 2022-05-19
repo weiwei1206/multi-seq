@@ -1,2 +1,2 @@
 # 
-PyTorch implementation for paper: Contrastive Meta Learning with Behavior Multiplicity for Recommendation.
+PyTorch implementation for paper: Multi-Behavior Graph Constrastive Memory Networks for Next-Item Recommendation.
