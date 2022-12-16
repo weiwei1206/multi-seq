@@ -86,14 +86,6 @@ args.decay_step = args.trnNum//args.batch
 
 
 
-# #----IJCAI_15-------------------------------------------------------------------------------------------------------------------------------------
-# python ./main_ssl_dynamic.py  --dataset=IJCAI_15 --cl_long_rate=0.013 --cl_short_rate=0.00005 --tau=0.1 --time_slot=31104000 --gnn_layer=[16,16] --tau=0.035 --head_num=4
-# [01:36:30] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /home/ww/anaconda3/lib/python3.8/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.0.so: cannot open shared object file: No such file or directory
-# Using backend: pytorch
-# Namespace(batch=4096, cl_long_rate=0.015, cl_short_rate=5e-05, dataset='IJCAI_15', decay=0.96, decay_step=2, deep_layer=0, divSize=1000, drop_rate=0.1, epoch=1000, gate_rate=0.8, gnn_layer='[16,16]', graphSampleN=10000, head_num=4, hidden_dim=16, iiweight=0.3, isJustTest=False, isload=False, loadModelPath='/home/ww/Code/work1/master_behavior_attention/Model/IJCAI_15/topk_20_self_attention_behavior_IJCAI_15_2021_07_29__17_13_23_lr_0.001_reg_0.0145_batch_size_4096_time_slot_31104000_gnn_layer_[16,16].pth', load_model=None, lr=0.001, mult=1, opt_base_lr=0.0001, opt_max_lr=0.001, opt_weight_decay=0.0001, path='/home/ww/Code/MultiBehavior_BASELINE/MB-GCN/Datasets/', patience=300, point='topk_20', positional_rate=0.0001, reg=0.0145, sampNum=10, save_path='tem', seed=19, shoot=10, slope=0.1, slot=0.5, subUsrDcy=0.9, subUsrSize=10, target='buy', tau=0.1, time_slot=7776000.0, title='self_attention_behavior', trnNum=10000, tstEpoch=1)
-# #----IJCAI_15-------------------------------------------------------------------------------------------------------------------------------------
-
-
 # # #----Tmall-------------------------------------------------------------------------------------------------------------------------------------
 # python ./main_ssl_dynamic.py  --dataset=Tmall --cl_long_rate=0.013 --cl_short_rate=0.0005 --tau=0.1  --time_slot=864000 --hidden_dim=16 --tau=0.035 --gnn_layer=[16,16,16,16]
 # [09:08:13] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /home/ww/anaconda3/lib/python3.8/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.0.so: cannot open shared object file: No such file or directory
@@ -101,10 +93,3 @@ args.decay_step = args.trnNum//args.batch
 # Namespace(batch=4096, cl_long_rate=0.013, cl_short_rate=0.0005, dataset='Tmall', decay=0.96, decay_step=2, deep_layer=0, divSize=1000, drop_rate=0.1, epoch=1000, gate_rate=0.8, gnn_layer='[16,16,16,16]', graphSampleN=10000, head_num=4, hidden_dim=16, iiweight=0.3, isJustTest=False, isload=False, loadModelPath='/home/ww/Code/work1/master_behavior_attention/Model/IJCAI_15/topk_20_self_attention_behavior_IJCAI_15_2021_07_29__17_13_23_lr_0.001_reg_0.0145_batch_size_4096_time_slot_31104000_gnn_layer_[16,16].pth', load_model=None, lr=0.001, mult=1, opt_base_lr=0.0001, opt_max_lr=0.001, opt_weight_decay=0.0001, path='/home/ww/Code/MultiBehavior_BASELINE/MB-GCN/Datasets/', patience=300, point='topk_20', positional_rate=0.0001, reg=0.0145, sampNum=10, save_path='tem', seed=19, shoot=10, slope=0.1, slot=0.5, subUsrDcy=0.9, subUsrSize=10, target='buy', tau=0.035, time_slot=864000.0, title='self_attention_behavior', trnNum=10000, tstEpoch=1)
 # # #----Tmall-------------------------------------------------------------------------------------------------------------------------------------
 
-
-# # #----JD-------------------------------------------------------------------------------------------------------------------------------------
-# python ./main_ssl_dynamic.py  --dataset=JD --cl_long_rate=0.013 --cl_short_rate=0.0005 --tau=0.1 --time_slot=7776000 --gnn_layer=[16,16,16]
-# [00:12:41] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /home/ww/anaconda3/lib/python3.8/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.0.so: cannot open shared object file: No such file or directory
-# Using backend: pytorch
-# Namespace(batch=4096, cl_long_rate=0.013, cl_short_rate=0.0005, dataset='JD', decay=0.96, decay_step=2, deep_layer=0, divSize=1000, drop_rate=0.1, epoch=1000, gate_rate=0.8, gnn_layer='[16,16,16]', graphSampleN=10000, head_num=4, hidden_dim=16, iiweight=0.3, isJustTest=False, isload=False, loadModelPath='/home/ww/Code/work1/master_behavior_attention/Model/IJCAI_15/topk_20_self_attention_behavior_IJCAI_15_2021_07_29__17_13_23_lr_0.001_reg_0.0145_batch_size_4096_time_slot_31104000_gnn_layer_[16,16].pth', load_model=None, lr=0.001, mult=1, opt_base_lr=0.0001, opt_max_lr=0.001, opt_weight_decay=0.0001, path='/home/ww/Code/MultiBehavior_BASELINE/MB-GCN/Datasets/', patience=300, point='topk_20', positional_rate=0.0001, reg=0.0145, sampNum=10, save_path='tem', seed=19, shoot=10, slope=0.1, slot=0.5, subUsrDcy=0.9, subUsrSize=10, target='buy', tau=0.1, time_slot=7776000.0, title='self_attention_behavior', trnNum=10000, tstEpoch=1)
-# # #----JD-------------------------------------------------------------------------------------------------------------------------------------
